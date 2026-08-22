@@ -6764,6 +6764,16 @@
 		)
 		(uuid "26922a85-67ba-4a45-9612-8259a28b630e")
 	)
+	(text "100nF"
+		(exclude_from_sim no)
+		(at 171.704 95.504 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "282a6e96-f483-4689-a5b0-88e12bf3701a")
+	)
 	(text "2 * 16 LCD"
 		(exclude_from_sim no)
 		(at 191.262 95.25 0)
@@ -7013,6 +7023,12 @@
 		(uuid "5a935a0f-5694-4d1a-b408-b05c055be882")
 	)
 	(junction
+		(at 170.18 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65d66dcf-7bfc-4bc5-89c2-597b02c15d79")
+	)
+	(junction
 		(at 148.59 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7029,6 +7045,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79d261ed-f19e-4f6e-9744-1cef846d2afc")
+	)
+	(junction
+		(at 172.72 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7aae1f98-48c8-4b13-a9ff-b8c5fb676498")
 	)
 	(junction
 		(at 251.46 116.84)
@@ -7385,6 +7407,16 @@
 			(type default)
 		)
 		(uuid "1eaec6fe-5bce-4dc7-b159-26e6d31d6221")
+	)
+	(wire
+		(pts
+			(xy 168.91 83.82) (xy 170.18 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed6be16-fb72-42da-b175-4375f7436220")
 	)
 	(wire
 		(pts
@@ -7745,6 +7777,16 @@
 			(type default)
 		)
 		(uuid "5bc23ebf-d409-455f-b6f3-b1c8324f9ba4")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 168.91 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c0a8787-4d7e-49e2-a237-3ce720217366")
 	)
 	(wire
 		(pts
@@ -8268,6 +8310,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 97.79) (xy 173.99 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b95b77c4-9b3a-4deb-9a34-02af81ffeb33")
+	)
+	(wire
+		(pts
 			(xy 20.32 149.86) (xy 20.32 191.77)
 		)
 		(stroke
@@ -8325,6 +8377,16 @@
 			(type default)
 		)
 		(uuid "c4a425db-39ea-4cfb-ae69-20ebbe3000bc")
+	)
+	(wire
+		(pts
+			(xy 173.99 83.82) (xy 172.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68de934-a0b2-4697-a89b-32f0857851fc")
 	)
 	(wire
 		(pts
@@ -10755,6 +10817,86 @@
 			(project "Smart-Irrigation-Controller"
 				(path "/3f94b125-346a-4f5e-8c44-f5e9687b80e9"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 171.45 97.79 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c03753a1-404c-4630-9774-f7ee369e6e18")
+		(property "Reference" "C8"
+			(at 171.45 93.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 170.1738 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 171.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d4ede9b3-1e8c-44d2-87d5-e0904856a39c")
+		)
+		(pin "1"
+			(uuid "cbd67ba3-9fba-4b79-8c6e-f6b30cb4ed6d")
+		)
+		(instances
+			(project "Smart-Irrigation-Controller"
+				(path "/3f94b125-346a-4f5e-8c44-f5e9687b80e9"
+					(reference "C8")
 					(unit 1)
 				)
 			)
