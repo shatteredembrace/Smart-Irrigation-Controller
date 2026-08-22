@@ -7487,6 +7487,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 153.67) (xy 111.76 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb430ae-d649-41c6-9edc-3c552cb3d216")
+	)
+	(wire
+		(pts
 			(xy 148.59 35.56) (xy 173.99 35.56)
 		)
 		(stroke
@@ -8467,7 +8477,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 153.67) (xy 104.14 153.67)
+			(xy 81.28 153.67) (xy 101.6 153.67)
 		)
 		(stroke
 			(width 0)
@@ -8665,7 +8675,7 @@
 		)
 		(uuid "800c3b4d-37b5-4c4a-ac40-1f0d9049b692")
 	)
-	(label "LCD VSS"
+	(label "I2C VCC"
 		(at 45.72 157.48 0)
 		(effects
 			(font
@@ -8888,7 +8898,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" ""
 			(at 41.91 147.3262 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9114,7 +9124,7 @@
 	)
 	(symbol
 		(lib_id "water_lib:RESISTOR")
-		(at 113.03 153.67 270)
+		(at 110.49 153.67 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9124,7 +9134,7 @@
 		(dnp no)
 		(uuid "2620efb0-233e-4fb6-853c-ba3401fe4387")
 		(property "Reference" "K2"
-			(at 108.204 151.13 90)
+			(at 105.664 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9133,8 +9143,8 @@
 				)
 			)
 		)
-		(property "Value" "10K"
-			(at 108.204 153.67 90)
+		(property "Value" "1K"
+			(at 105.664 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9144,7 +9154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 153.67 0)
+			(at 110.49 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9155,7 +9165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 153.67 0)
+			(at 110.49 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9166,7 +9176,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 153.67 0)
+			(at 110.49 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10375,7 +10385,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" ""
 			(at 266.7 102.8762 0)
 			(show_name no)
 			(do_not_autoplace no)
