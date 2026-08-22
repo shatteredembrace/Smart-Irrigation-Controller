@@ -10,6 +10,7 @@
 		(rev "1.0")
 		(company "Kooshyar Esmaeili")
 		(comment 1 "ESP32-based Smart Irrigation System")
+		(comment 2 "*2N2219 symbol is used as 2N2222, for now.")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
@@ -4605,7 +4606,7 @@
 				(pin passive line
 					(at -20.32 -10.16 270)
 					(length 3.81)
-					(name "V0"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6743,6 +6744,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "I2C\n"
+		(exclude_from_sim no)
+		(at 186.944 73.406 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20c7f9fd-f7e1-48e1-9752-e17339a3a8d8")
+	)
 	(text "12V-"
 		(exclude_from_sim no)
 		(at 19.304 75.184 0)
@@ -6752,6 +6763,26 @@
 			)
 		)
 		(uuid "26922a85-67ba-4a45-9612-8259a28b630e")
+	)
+	(text "2 * 16 LCD"
+		(exclude_from_sim no)
+		(at 191.262 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2c7a1316-9a98-411a-ac0c-dd437b9c9eff")
+	)
+	(text "1000uF\nlow-ESR\n"
+		(exclude_from_sim no)
+		(at 77.216 112.522 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2f225cb3-595b-4768-84db-62668931de06")
 	)
 	(text "+5V\n"
 		(exclude_from_sim no)
@@ -6763,6 +6794,16 @@
 		)
 		(uuid "4d6974a0-8a5a-4006-8c68-e9fc2c420659")
 	)
+	(text "100nF\n"
+		(exclude_from_sim no)
+		(at 54.864 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4dc2fb31-cd69-4493-9b3c-01664643380c")
+	)
 	(text "ESP32"
 		(exclude_from_sim no)
 		(at 111.506 104.648 0)
@@ -6772,6 +6813,16 @@
 			)
 		)
 		(uuid "68ced23d-7de9-4b3d-b871-cbe448fbeb56")
+	)
+	(text "RELAY\n"
+		(exclude_from_sim no)
+		(at 182.88 33.274 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "7ffc7867-8a3d-4795-bfe7-e3d4c1d13a70")
 	)
 	(text "SWITCHING\nPOWER SUPPLY"
 		(exclude_from_sim no)
@@ -6792,6 +6843,36 @@
 			)
 		)
 		(uuid "9bcbef8f-25bd-4bf3-bdc6-67fe23bae6bf")
+	)
+	(text "1000uF\nlow-ESR\n"
+		(exclude_from_sim no)
+		(at 166.878 146.558 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9cb98c14-e5d7-41c8-8b48-a99bf88b6de5")
+	)
+	(text "100nF"
+		(exclude_from_sim no)
+		(at 268.986 103.124 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad8c1a7d-0cdc-4523-aa13-2184583d930a")
+	)
+	(text "1000uF"
+		(exclude_from_sim no)
+		(at 38.354 128.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c0e05916-33af-47dd-95a6-d1f94dd6bea5")
 	)
 	(text "DC 12V--2A\n"
 		(exclude_from_sim no)
@@ -6823,6 +6904,36 @@
 		)
 		(uuid "db8bce71-710b-49b7-98b8-d981598f920e")
 	)
+	(text "1000uF"
+		(exclude_from_sim no)
+		(at 37.338 145.796 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "de724e28-1548-4ef1-96b5-67fc5a47d880")
+	)
+	(text "1000uF\nlow-ESR\n"
+		(exclude_from_sim no)
+		(at 169.672 117.856 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e345339d-4dcc-40ab-a3a3-169e019ade8a")
+	)
+	(text "2N2222*\n"
+		(exclude_from_sim no)
+		(at 124.968 156.972 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f21ed733-7225-4200-a589-45d322fe3682")
+	)
 	(junction
 		(at 40.64 113.03)
 		(diameter 0)
@@ -6834,12 +6945,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05539934-9a19-4bfc-b23b-5d9072022d2f")
-	)
-	(junction
-		(at 33.02 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a459d61-1b30-44a9-809f-6c529300c748")
 	)
 	(junction
 		(at 251.46 88.9)
@@ -6968,6 +7073,12 @@
 		(uuid "b07a4624-3672-4ecb-846c-8ac2a6a3007d")
 	)
 	(junction
+		(at 33.02 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b78ec156-9bd9-47db-8be5-9d03021e3607")
+	)
+	(junction
 		(at 20.32 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6986,12 +7097,6 @@
 		(uuid "cc9102a4-24ab-44c6-8812-659da8895e0d")
 	)
 	(junction
-		(at 33.02 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3366a34-e3c6-4266-be44-9ebe09c247a0")
-	)
-	(junction
 		(at 119.38 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7002,6 +7107,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7ee7d4a-edc9-4420-a21f-7cf5de76cbfc")
+	)
+	(junction
+		(at 33.02 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df5f7325-f9f3-4f62-a8b7-260b5381aebd")
 	)
 	(junction
 		(at 22.86 113.03)
@@ -7164,16 +7275,6 @@
 			(type default)
 		)
 		(uuid "017f5f73-06b4-47f6-a535-6c934cc77f98")
-	)
-	(wire
-		(pts
-			(xy 39.37 140.97) (xy 33.02 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06e1170b-5ebf-4d56-9b7d-4a50f424ffb2")
 	)
 	(wire
 		(pts
@@ -7367,6 +7468,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 149.86) (xy 49.53 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2677bf42-59e1-4194-a356-0c6749f4bebd")
+	)
+	(wire
+		(pts
 			(xy 175.26 191.77) (xy 175.26 158.75)
 		)
 		(stroke
@@ -7447,23 +7558,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 148.59) (xy 39.37 149.86)
+			(xy 49.53 148.59) (xy 49.53 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "372f73f7-ccde-4efc-b989-bcfde636b356")
-	)
-	(wire
-		(pts
-			(xy 39.37 143.51) (xy 39.37 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "373c7708-0b1f-44e4-bf61-992bc3e3e6a6")
 	)
 	(wire
 		(pts
@@ -7847,6 +7948,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 137.16) (xy 49.53 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "885c40cf-42d9-4954-973d-40bd6037b506")
+	)
+	(wire
+		(pts
 			(xy 173.99 45.72) (xy 176.53 45.72)
 		)
 		(stroke
@@ -7907,16 +8018,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 149.86) (xy 33.02 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f54a6bc-d5ca-41f1-b9e1-7542ea8b6361")
-	)
-	(wire
-		(pts
 			(xy 119.38 148.59) (xy 148.59 148.59)
 		)
 		(stroke
@@ -7964,6 +8065,16 @@
 			(type default)
 		)
 		(uuid "99433da0-4785-45f8-b36c-51eb6cb795bb")
+	)
+	(wire
+		(pts
+			(xy 49.53 137.16) (xy 33.02 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9adfaab2-893c-45be-9860-c3a5c1b16284")
 	)
 	(wire
 		(pts
@@ -8287,6 +8398,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 137.16) (xy 33.02 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49707eb-d74f-4fc0-a128-61ba46b3c18e")
+	)
+	(wire
+		(pts
 			(xy 148.59 76.2) (xy 148.59 148.59)
 		)
 		(stroke
@@ -8494,16 +8615,6 @@
 			(type default)
 		)
 		(uuid "f7f35592-2c33-41e8-bb5c-f0dd8ee26f81")
-	)
-	(wire
-		(pts
-			(xy 33.02 140.97) (xy 33.02 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f814b197-0463-4afd-9b98-4de8f5846dd7")
 	)
 	(label "BUZZER+"
 		(at 90.17 111.76 180)
@@ -8877,7 +8988,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 39.37 146.05 0)
+		(at 49.53 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8888,7 +8999,7 @@
 		(fields_autoplaced yes)
 		(uuid "0940c68b-63fc-4a1d-af97-f7fe9c7079cc")
 		(property "Reference" "C3"
-			(at 41.91 144.7862 0)
+			(at 52.07 144.7862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8899,7 +9010,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 41.91 147.3262 0)
+			(at 52.07 147.3262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8910,7 +9021,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8921,7 +9032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8932,7 +9043,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 39.37 146.05 0)
+			(at 49.53 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10445,6 +10556,128 @@
 		)
 	)
 	(symbol
+		(lib_id "water_lib:LCD")
+		(at 195.58 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b678e5b7-d569-47f8-8a40-f94bf8c5c587")
+		(property "Reference" "LCD1"
+			(at 192.405 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 195.58 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "33847c80-92b2-4e20-a155-8a6ee50f9e77")
+		)
+		(pin "15"
+			(uuid "171c02cd-faaf-4471-a601-253c880946a4")
+		)
+		(pin "4"
+			(uuid "201672aa-c5f3-4983-82d2-f2fbf341f36c")
+		)
+		(pin "6"
+			(uuid "bdcc875a-ca58-4069-9251-575581e9ec0f")
+		)
+		(pin "7"
+			(uuid "cd7d1bae-6e4e-46a5-961b-304d0aef665f")
+		)
+		(pin "8"
+			(uuid "fd8a613d-b5cd-4d10-bdef-77f0261d6515")
+		)
+		(pin "1"
+			(uuid "3f43036f-09a2-4153-b294-3f5dcb12aae9")
+		)
+		(pin "9"
+			(uuid "74b6c265-b3b6-4e55-b45d-e82a5e91bc16")
+		)
+		(pin "5"
+			(uuid "0da3b18d-1df2-4d37-991d-5bb111378530")
+		)
+		(pin "10"
+			(uuid "5288ceee-aa58-4aa5-9e57-1fda348836b0")
+		)
+		(pin "11"
+			(uuid "cca95755-ac0f-47eb-8521-5e881e583543")
+		)
+		(pin "12"
+			(uuid "741f01a2-8303-44b9-aa34-ad257b401598")
+		)
+		(pin "13"
+			(uuid "f8615c28-982b-489c-8611-6ef6d7b5cdb9")
+		)
+		(pin "2"
+			(uuid "af558456-00b6-468f-aabb-a48a9eb33179")
+		)
+		(pin "14"
+			(uuid "8ac80a56-828b-4d6b-8146-8900b24a7fa5")
+		)
+		(pin "16"
+			(uuid "03273f72-0533-49c6-9045-ed14d241b09e")
+		)
+		(instances
+			(project "Smart-Irrigation-Controller"
+				(path "/3f94b125-346a-4f5e-8c44-f5e9687b80e9"
+					(reference "LCD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "water_lib:SOIL_MOISTURE_SENSOR")
 		(at 191.77 151.13 0)
 		(mirror y)
@@ -10860,127 +11093,6 @@
 		)
 	)
 	(symbol
-		(lib_id "water_lib:LCD")
-		(at 195.58 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da3ed35b-cf22-4030-ab5d-c0e2c9a17da8")
-		(property "Reference" "LCD1"
-			(at 191.389 102.743 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 195.58 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 195.58 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "15"
-			(uuid "42bb37bc-09dd-4b38-a686-f292c44ac56f")
-		)
-		(pin "2"
-			(uuid "08b1d182-bff1-4f88-8568-1eb1a9d4d31d")
-		)
-		(pin "4"
-			(uuid "adadff88-16c8-425a-a88a-e09f652aac3b")
-		)
-		(pin "5"
-			(uuid "66bfde7e-57e7-4045-90df-54678cc41143")
-		)
-		(pin "7"
-			(uuid "b5199c8e-8fde-4ba2-8b61-424793008a7b")
-		)
-		(pin "8"
-			(uuid "3dc657b6-9281-46c9-9d87-8cd7106b8b84")
-		)
-		(pin "1"
-			(uuid "58baa478-dae5-45c1-b38c-c8e8b9701ce7")
-		)
-		(pin "3"
-			(uuid "4416d01a-6f9b-4e6b-a687-83356a62886f")
-		)
-		(pin "11"
-			(uuid "f8cdf59a-155b-43c1-93d7-35bb37af2253")
-		)
-		(pin "10"
-			(uuid "9f547582-dbb6-462e-a336-023294190d4f")
-		)
-		(pin "12"
-			(uuid "9068b8c4-9da2-444c-9759-ca2b661fde6e")
-		)
-		(pin "13"
-			(uuid "f424eba4-9fbf-4e2d-8767-aa212ec30d2d")
-		)
-		(pin "9"
-			(uuid "75087fd4-2fd5-490b-9b93-5a215393cbe5")
-		)
-		(pin "14"
-			(uuid "218ec980-856b-4cb9-9b19-2466d8e0fccf")
-		)
-		(pin "6"
-			(uuid "60f9d8ea-cbe7-4116-8aaa-15e05f5035de")
-		)
-		(pin "16"
-			(uuid "a2e2a283-45e4-4290-b96a-154326edf94a")
-		)
-		(instances
-			(project "Smart-Irrigation-Controller"
-				(path "/3f94b125-346a-4f5e-8c44-f5e9687b80e9"
-					(reference "LCD1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "water_lib:PUSH_BUTTON")
 		(at 130.81 43.18 0)
 		(unit 1)
@@ -11323,7 +11435,7 @@
 		(dnp no)
 		(uuid "f7a058d4-843f-46ba-b075-f6baa4b6c8ac")
 		(property "Reference" "K1"
-			(at 32.258 61.976 0)
+			(at 20.574 41.148 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -4003,7 +4003,7 @@
 			(pin passive line
 				(at -20.32 -10.16 270)
 				(length 3.81)
-				(name "VO"
+				(name "V0"
 					(effects
 						(font
 							(size 1.27 1.27)
