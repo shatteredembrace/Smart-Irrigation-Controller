@@ -5,7 +5,7 @@ ESP32-based smart irrigation controller with automatic soil-moisture control, GS
 ## Project Status
 - [x] KiCad schematic
 - [x] ERC verification
-- [ ] Prototype firmware
+- [x] Prototype firmware
 - [ ] PCB design
 - [ ] PCB fabrication
 - [ ] Final hardware testing
