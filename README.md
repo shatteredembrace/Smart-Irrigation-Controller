@@ -2,6 +2,8 @@
 
 ESP32-based smart irrigation controller with automatic soil-moisture control, GSM communication, Wi-Fi API, environmental monitoring, and safety protection.
 
+> **License:** Proprietary — All Rights Reserved. Contributions are welcome via Pull Requests. See [LICENSE](LICENSE) and [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
 ## Project Status
 - [x] KiCad schematic
 - [x] ERC verification
