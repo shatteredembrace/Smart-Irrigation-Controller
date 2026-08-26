@@ -1,4 +1,4 @@
-# Smart Irrigation Controller
+# Smart Irrigation Controller(Work in progress)
 
 ESP32-based smart irrigation controller with automatic soil-moisture control, GSM communication, Wi-Fi API, environmental monitoring, and safety protection.
 
@@ -42,6 +42,9 @@ The current hardware design includes:
 - Push buttons
 - Buzzer
 - 12 V power input
+- General-purpose electrolytic capacitors(1000uF)
+- Low-ESR capacitors(1000uF)
+- Ceramic capacitors(100nF)
 
 ## Repository Structure
 
