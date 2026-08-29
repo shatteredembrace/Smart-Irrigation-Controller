@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "water_lib") (type "KiCad") (uri "C:/Users/Kooshyar/Documents/Smart-Irrigation-Controller/hardware/symbols/water_lib.kicad_sym") (options "") (descr ""))
+)
