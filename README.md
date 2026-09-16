@@ -222,6 +222,7 @@ stability and transient load behavior.
 ## Design Philosophy
 
 The hardware was designed around several principles:
+
 1.	Keep high-current loads away from direct microcontroller GPIO drive.
 2.	Provide appropriate regulation for subsystems with different power requirements.
 3.	Maintain a common signal reference between communicating subsystems.
