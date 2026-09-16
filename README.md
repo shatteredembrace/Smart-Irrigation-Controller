@@ -50,7 +50,7 @@ The current hardware design includes:
 
 ## Repository Structure
 
-```text
+
 
 ├── README.md
 ├── LICENSE
@@ -65,7 +65,7 @@ The current hardware design includes:
 │   ├── testing.md
 │   └── communication.md
 └── prototype/
-```
+
 
 Schematic
 
