@@ -50,7 +50,7 @@ The current hardware design includes:
 
 ## Repository Structure
 
-
+```text
 
 ├── README.md
 ├── LICENSE
