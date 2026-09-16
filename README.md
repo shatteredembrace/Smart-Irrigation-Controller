@@ -74,7 +74,7 @@ The current KiCad schematic represents the electrical architecture of the protot
 PCB design will be developed in a later revision.
 
 
-##Future Work :
+## Future Work :
 
 PCB layout
 PCB fabrication
@@ -85,7 +85,7 @@ Extended communication features
 
 
 
-##Overview
+## Overview
 
 This project is an ESP32-based smart irrigation controller designed to monitor soil moisture and control a water pump according to configurable moisture thresholds. The system supports both automatic and manual operation through a local LCD interface, while also providing remote control and status monitoring through Wi-Fi and GSM/SMS communication.
 The controller uses a soil-moisture sensor as the primary input for automatic irrigation, with a DHT sensor providing environmental temperature and humidity data. A relay-driven pump provides the irrigation output, while configurable calibration values and start/stop thresholds allow the system to be adapted to different soil and sensor characteristics.
@@ -93,7 +93,7 @@ The hardware was developed and validated initially as a functional prototype. Th
 
 
 
-##Features
+## Features
 
 •	Automatic irrigation based on configurable soil-moisture start and stop thresholds.
 •	Manual pump control through the local LCD interface.
@@ -110,12 +110,13 @@ The hardware was developed and validated initially as a functional prototype. Th
 
 
 
-##System Architecture
+## System Architecture
 
 The system is organized around an ESP32 microcontroller that acts as the central control and communication unit. It acquires sensor data, manages the irrigation state, drives the pump relay, updates the local LCD interface, and handles remote commands received through Wi-Fi and GSM.
 
 
 Functional Architecture
+```
 
 
                          ┌─────────────────────┐
@@ -169,7 +170,7 @@ Functional Architecture
                  └────────────────┬──────────────────┘
                                   ▼
                                ESP32
-
+```
 
 The separate regulator paths isolate the high-current GSM load from the main logic supply while maintaining a common electrical reference between the subsystems. The common ground is required for reliable signal communication between the ESP32 and externally powered modules such as the SIM800L.
 
@@ -207,7 +208,7 @@ Local decoupling and bulk capacitance are used to support supply
 stability and transient load behavior.
 
 
-##Design Philosophy
+## Design Philosophy
 
 The hardware was designed around several principles:
 1.	Keep high-current loads away from direct microcontroller GPIO drive.
@@ -218,12 +219,13 @@ The hardware was designed around several principles:
 6.	Treat power integrity and transient behavior as part of the system design rather than as an afterthought.
 
 
-##Firmware Architecture
+## Firmware Architecture
 
 The firmware is organized around a non-blocking control loop in which sensor acquisition, user-interface handling, irrigation control, communication, and safety checks are processed as independent tasks.
 The ESP32 acts as the central software controller and maintains the current system state, including the operating mode, sensor measurements, pump state, configuration parameters, and communication status.
 
 Main Control Flow
+```
 
                     ┌──────────────────┐
                     │   System Setup   │
@@ -265,9 +267,9 @@ Main Control Flow
                          │
                          ▼
                        Relay
+```
 
-
-##Operating Modes
+## Operating Modes
 
 The firmware maintains two primary irrigation modes.
 
@@ -342,7 +344,7 @@ The SIM800L provides an independent remote-control path through SMS.
 Received commands are routed through the same command-processing layer
 used by the local and Wi-Fi interfaces.
 
-##Configuration and Persistence
+## Configuration and Persistence
 
 User-configurable parameters are stored separately from transient runtime state.
 Configuration includes the values required for irrigation thresholds and sensor calibration. 
@@ -392,7 +394,8 @@ Representative issues included:
   electrical-type issues rather than broadly suppressing checks.
 
 
-##Testing & Validation
+## Testing & Validation
+```
 
 The prototype was tested incrementally, with individual subsystems validated before being tested as an integrated system. Functional tests were performed on the sensor interfaces, user interface, actuator control, Wi-Fi API, and GSM communication.
 Functional Test Matrix
@@ -420,7 +423,7 @@ GSM/SMS	SMS reception	Incoming command is detected and parsed	✅
 GSM/SMS	STATUS	Status response is returned by SMS	✅
 GSM/SMS	Pump control	SMS command changes pump state	✅
 Schematic	KiCad ERC	No unresolved ERC errors remain	✅
-
+```
 
 ## Build and Setup
 
@@ -464,7 +467,7 @@ Real credentials must never be committed to the public repository.
 7. Test GSM/SMS functionality.
 8. Verify pump safety behavior.
 
-##Security
+## Security
 
 The public repository must not contain real:
 •	Wi-Fi passwords;
@@ -478,7 +481,7 @@ WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
 WIFI_API_KEY  = "YOUR_API_KEY"
 The API key should be treated as a credential even though the project is intended as a prototype.
 
-##User Guide
+## User Guide
 
 For detailed operating instructions, see
 [User Guide](docs/user-guide.md).
@@ -541,7 +544,7 @@ brownout/transient-condition testing.
 Potential improvements include OTA updates, enhanced diagnostics,
 event logging, fault recovery, and expanded configuration management.
 
-##Current Scope
+## Current Scope
 
 The current project should therefore be considered a functional embedded-systems prototype, rather than a finished commercial irrigation product.
 The current revision demonstrates the integration of:
