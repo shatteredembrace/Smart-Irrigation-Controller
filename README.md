@@ -302,8 +302,8 @@ All pump-control paths converge on the same control mechanism:
 A configurable pump-runtime timeout provides an additional safeguard
 against indefinite pump operation.
 
-##LCD User Interface
-
+## LCD User Interface
+```
 The LCD interface is implemented as a collection of screens/states rather than as one continuously redrawn menu.
 The main interface consists of:
 Main Menu
@@ -318,6 +318,7 @@ Main Menu
     └── WET
 The settings interface allows the user to modify the automatic irrigation thresholds and sensor calibration parameters.
 The display logic also explicitly manages the contents of individual LCD fields so that remnants of previous, longer strings are not left visible after navigation.
+```
 
 ## Communication Interfaces
 
@@ -545,7 +546,7 @@ Potential improvements include OTA updates, enhanced diagnostics,
 event logging, fault recovery, and expanded configuration management.
 
 ## Current Scope
-
+```
 The current project should therefore be considered a functional embedded-systems prototype, rather than a finished commercial irrigation product.
 The current revision demonstrates the integration of:
 Sensors
@@ -563,6 +564,7 @@ Wi-Fi remote control
           +
 GSM / SMS communication
           +
+```
 
 Software safety mechanisms
 
