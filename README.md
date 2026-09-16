@@ -96,16 +96,27 @@ The hardware was developed and validated initially as a functional prototype. Th
 ## Features
 
 •	Automatic irrigation based on configurable soil-moisture start and stop thresholds.
+
 •	Manual pump control through the local LCD interface.
+
 •	Soil-moisture calibration using configurable dry and wet reference values.
+
 •	Temperature and humidity monitoring using a DHT sensor.
+
 •	LCD user interface with dashboard, operating-mode selection, manual pump control, and configuration menus.
+
 •	Wi-Fi connectivity for remote status monitoring and authenticated pump/control commands through an HTTP API.
+
 •	GSM/SMS connectivity through the SIM800L module for remote commands and status communication.
+
 •	Relay-based pump control with software handling of the relay's active logic.
+
 •	Pump runtime protection to prevent the pump from operating continuously beyond the configured safety limit.
+
 •	Sensor fault detection with pump shutdown when a critical soil-moisture sensor fault is detected.
+
 •	Persistent configuration for operating mode, moisture thresholds, and calibration parameters.
+
 •	Audible feedback through a buzzer for user-interface actions and system events.
 
 
