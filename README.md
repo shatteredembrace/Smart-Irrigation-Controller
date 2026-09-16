@@ -65,6 +65,7 @@ The current hardware design includes:
 │   ├── testing.md
 │   └── communication.md
 └── prototype/
+```
 
 Schematic
 
